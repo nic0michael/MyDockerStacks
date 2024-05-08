@@ -1,4 +1,4 @@
-## 1. create Docker compose file
+## 1. Create Docker compose file
 run these commands
 ```
 sudo su -
@@ -17,7 +17,7 @@ services:
     restart: always
 
 ```
-## 2. Strat the container in detached mode
+## 2. Start the container in detached mode
 Run this command:
 ```
 docker compose up -d
