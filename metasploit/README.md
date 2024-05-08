@@ -45,7 +45,18 @@ services:
 #      POSTGRES_HOST_AUTH_METHOD: trust
 ```
 
-Start the Container (in detached mode):
+## 3. Start the Container (in detached mode):
+Run this command :
 ```
 docker compose up -d
-``` 
+```
+## 4. Running Metasploit fremework from the terminal
+Run these commands :
+```
+# get Containers bash terminal
+docker exec -it metasploit bash
+
+# Run Metasploit Framework Console
+./msfconsole
+```
+

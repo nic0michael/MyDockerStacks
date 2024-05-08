@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  KaliLinux:
+    image: kalilinux/kali-rolling:latest
+    container_name: KaliLinux
+    tty: true
+    stdin_open: true
+    restart: always
+
