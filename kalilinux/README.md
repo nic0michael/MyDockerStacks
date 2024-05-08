@@ -24,5 +24,5 @@ docker compose up -d
 ```
 ## 3. Open Containers bash in terminal
 ```
-docker exec KaliLinux bash
+docker exec -it KaliLinux bash
 ```
