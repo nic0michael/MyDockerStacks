@@ -1,0 +1,43 @@
+version: '2'
+volumes:
+  app:
+  db:
+services:
+  app:
+    container_name: gitea-app
+    restart: always
+    image: gitea/gitea:${GITEA_VERSION}
+    links:
+      - db:mysql
+    volumes:
+      - ./volumes/gitea_app:/data
+    ports:
+      - "${GITEA_SSH_PORT}:22"
+      - "${GITEA_WEB_PORT}:3000"
+    environment:
+      - VIRTUAL_PORT=3000
+      - VIRTUAL_HOST=${GITEA_HOSTNAME}
+    networks:
+      - backend
+      - frontend
+  db:
+    container_name: gitea-db
+    restart: always
+    image: mysql:8.0
+    #security_opt:
+    #  - seccomp:unconfined
+    cap_add: [ SYS_NICE ]
+    volumes:
+      - ./volumes/gitea_db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    networks:
+      - backend
+
+networks:
+  frontend:
+  backend:
+

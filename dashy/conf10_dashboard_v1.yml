@@ -1,0 +1,354 @@
+pageInfo:
+  title: Dashy Dashboard V1.0
+  navLinks:
+    - title: Home
+      path: /
+    - title: About
+      path: /about
+    - title: Source Code
+      path: https://github.com/Lissy93/dashy
+appConfig:
+  theme: dracula
+  fontAwesomeKey: 13014ae648
+  layout: auto
+  iconSize: medium
+  language: en
+sections:
+  - name: Main Dashboard
+    items:
+      - &ref_0
+        title: Proxmox
+        description: Proxmox our Homelab
+        icon: favicon
+        url: https://upupa.loseyourip.com:8006
+        id: 0_1325_proxmox
+      - &ref_1
+        title: Portainer
+        description: Manage the Docker containers
+        icon: favicon
+        url: http://buffalo.loseyourip.com:9000/#!/home
+        id: 1_1325_portainer
+      - &ref_2
+        title: Smokeping
+        description: Check Network Performance
+        icon: favicon
+        url: http://buffalo.loseyourip.com:8081/
+        id: 2_1325_smokeping
+      - &ref_3
+        title: Librespeed
+        description: Calendar, contacts and tasks
+        icon: favicon
+        url: http://buffalo.loseyourip.com:8082
+        id: 3_1325_librespeed
+      - &ref_4
+        title: Live Coin Watch
+        description: Real-time crypto prices and read-only portfolio
+        icon: favicon
+        url: https://www.livecoinwatch.com/
+        id: 4_1325_livecoinwatch
+      - &ref_5
+        title: Standard Notes
+        description: Encrypted productivity suit
+        icon: favicon
+        url: https://app.standardnotes.org/
+        id: 5_1325_standardnotes
+      - &ref_6
+        title: Live Coin Watch
+        description: Real-time crypto prices and read-only portfolio
+        icon: favicon
+        url: https://www.livecoinwatch.com/
+        id: 4_1325_livecoinwatch
+      - &ref_7
+        title: Standard Notes
+        description: Encrypted productivity suit
+        icon: favicon
+        url: https://app.standardnotes.org/
+        id: 5_1325_standardnotes
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+      - *ref_6
+      - *ref_7
+  - name: Personal
+    items:
+      - &ref_8
+        title: Yahoo email
+        icon: fab fa-discord
+        url: https://mail.yahoo.com/?.intl=us&.partner=ftr&.lang=en-us
+        id: 0_603_yahoo
+      - &ref_9
+        title: Github
+        icon: fab fa-mastodon
+        url: https://github.com/nic0michael
+        id: 1_603_github
+      - &ref_10
+        title: WhatsApp
+        icon: fab fa-reddit
+        url: https://web.whatsapp.com/
+        id: 2_603_whatsapp
+      - &ref_11
+        title: YouTube Channel
+        icon: fab fa-youtube
+        url: https://www.youtube.com/@dvp7388
+        id: 3_603_youtube_channel
+      - &ref_12
+        title: YouTube
+        icon: fab fa-youtube
+        url: https://youtube.com/
+        id: 4_603_youtube
+      - &ref_13
+        title: Udemy
+        icon: fab fa-instagram
+        url: https://www.udemy.com/
+        id: 5_603_youdemy
+      - &ref_14
+        title: YouTube
+        icon: fab fa-youtube
+        url: https://youtube.com/
+        id: 4_603_youtube
+      - &ref_15
+        title: Udemy
+        icon: fab fa-instagram
+        url: https://www.udemy.com/
+        id: 5_603_youdemy
+
+    filteredItems:
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
+      - *ref_12
+      - *ref_13
+      - *ref_14
+      - *ref_15
+  - name: Coding
+    displayData:
+      rows: 2
+    items:
+      - &ref_16
+        title: StackOverflow
+        icon: fab fa-stack-overflow
+        url: https://stackoverflow.com/
+        id: 0_596_stackoverflow
+      - &ref_17
+        title: GitHub
+        icon: fab fa-github
+        url: https://github.com/
+        id: 1_596_github
+      - &ref_18
+        title: Grep App
+        icon: fas fa-slash
+        description: >-
+          Allows you to search the contents of files within GitHub repos, with a
+          RegEx option too
+        url: https://grep.app/
+        id: 2_596_grepapp
+      - &ref_19
+        title: Hoppscotch
+        icon: fas fa-dice-d6
+        description: API development tool
+        url: https://hoppscotch.io/
+        id: 3_596_hoppscotch
+      - &ref_20
+        title: Regexr
+        icon: fas fa-code
+        description: App for creating, testing and understanding regular expressions
+        url: https://regexr.com/
+        id: 4_596_regexr
+      - &ref_21
+        title: Tmate
+        icon: fas fa-terminal
+        description: Instant TMUX-based terminal sharing
+        url: https://tmate.io/
+        id: 5_596_tmate
+      - &ref_22
+        title: Debian Handbook
+        icon: fab fa-linux
+        url: https://debian-handbook.info/browse/stable/
+        id: 6_596_debianhandbook
+      - &ref_23
+        title: Crontab Guru
+        description: Editor for cron schedule expressions
+        icon: fas fa-pen-square
+        url: https://crontab.guru/
+        id: 7_596_crontabguru
+      - &ref_24
+        title: CyberChef
+        description: All in one encryption, encoding, hashes etc
+        icon: fas fa-user-astronaut
+        url: https://gchq.github.io/CyberChef/
+        id: 8_596_cyberchef
+      - &ref_25
+        title: SSL Labs Tester
+        description: Check SSL Certificates
+        icon: fab fa-expeditedssl
+        url: https://www.ssllabs.com/ssltest/
+        id: 9_596_ssllabstester
+      - &ref_26
+        title: JSON Formatter
+        description: JSON validator, beautifier and convertor
+        url: https://jsonformatter.org/
+        icon: fas fa-brackets-curly
+        id: 10_596_jsonformatter
+      - &ref_27
+        title: JSFiddle
+        url: https://jsfiddle.net/
+        icon: fab fa-jsfiddle
+        id: 11_596_jsfiddle
+      - &ref_28
+        title: Digital Ocean
+        description: Affordable, preformant cloud services
+        url: https://cloud.digitalocean.com/
+        icon: fab fa-digital-ocean
+        id: 12_596_digitalocean
+      - &ref_29
+        title: HealthChecks.io
+        description: Off-site cron job and service monitoring
+        icon: fal fa-monitor-heart-rate
+        url: https://healthchecks.io/
+        id: 13_596_healthchecksio
+    filteredItems:
+      - *ref_16
+      - *ref_17
+      - *ref_18
+      - *ref_19
+      - *ref_20
+      - *ref_21
+      - *ref_22
+      - *ref_23
+      - *ref_24
+      - *ref_25
+      - *ref_26
+      - *ref_27
+      - *ref_28
+      - *ref_29
+
+  - name: Utilities
+    displayData:
+      itemSize: small
+      cols: 2
+    items:
+      - &ref_30
+        title: Chroniker Timer
+        description: A productivity timer
+        url: https://chroniker.co/
+        id: 0_956_chronikertimer
+      - &ref_31
+        title: CopyChar
+        description: easily search and copy any symbol
+        url: https://copychar.cc/
+        id: 1_956_copychar
+      - &ref_32
+        title: DeepL
+        description: Fast, accurate, secure online multi-language translator
+        url: https://www.deepl.com/translator
+        id: 2_956_deepl
+      - &ref_33
+        title: Font Generator
+        description: Use ASCII characters for different plaintext fonts
+        url: https://www.fontgeneratoronline.com/
+        id: 3_956_fontgenerator
+      - &ref_34
+        title: JSON Formatter
+        description: CSV, JSON, YAML, XML and more formatting tools
+        url: https://jsonformatter.org/
+        id: 4_956_jsonformatter
+      - &ref_35
+        title: Time.Is
+        description: Time.Is
+        url: https://time.is/
+        id: 5_956_timeis
+      - &ref_36
+        title: Torrent Parts
+        description: Inspect and edit what's in your Torrent file or Magnet link
+        url: https://torrent.parts/
+        id: 6_956_torrentparts
+      - &ref_37
+        title: Photo College
+        url: https://www.befunky.com/create/collage/
+        id: 7_956_photocollege
+      - &ref_38
+        title: MD5 Hash
+        url: http://www.miraclesalad.com/webtools/md5.php
+        id: 8_956_mdhash
+      - &ref_39
+        title: GitHub Stars Over Time
+        url: https://seladb.github.io/StarTrack-js/
+        id: 9_956_githubstarsovertime
+      - &ref_40
+        title: Text & List Tools
+        url: https://pinetools.com/c-text-lists/
+        id: 10_956_textlisttools
+      - &ref_41
+        title: Online Text Tools
+        description: More text tools, allowing for RegEx actions
+        url: https://onlinetexttools.com/
+        id: 11_956_onlinetexttools
+      - &ref_42
+        title: Conversao
+        description: Instantly convert a unit to all others
+        url: https://conversao.net/eng/
+        id: 12_956_conversao
+      - &ref_43
+        title: Omni Calculators
+        description: A collection of thousands of calculators
+        url: https://www.omnicalculator.com/
+        id: 13_956_omnicalculators
+      - &ref_44
+        title: Dr Meme
+        description: Meme Generator
+        url: https://www.drmemes.com/
+        id: 14_956_drmeme
+      - &ref_45
+        title: ASCII Tree Generator
+        description: For displaying directory structure
+        url: https://ascii-tree-generator.com/
+        id: 15_956_asciitreegenerator
+      - &ref_46
+        title: ASCII Diagram Drawer
+        description: For using box characters to draw boxes
+        url: For using box characters to draw boxes
+        id: 16_956_asciidiagramdrawer
+      - &ref_47
+        title: Bullet Converter
+        description: Small script I use
+        url: https://listed.to/p/LxO8yHsB9E#bc
+        id: 17_956_bulletconverter
+      - &ref_48
+        title: Lenny Face Maker
+        description: Easily generate ASCII Lenny emojis
+        url: https://www.fontspace.com/lenny-face
+        id: 18_956_lennyfacemaker
+      - &ref_49
+        title: Yaml Lint
+        description: Validate YAML
+        url: https://www.yamllint.com/
+        id: 18_956_yaml_lint
+
+
+    filteredItems:
+      - *ref_30
+      - *ref_31
+      - *ref_32
+      - *ref_33
+      - *ref_34
+      - *ref_35
+      - *ref_36
+      - *ref_37
+      - *ref_38
+      - *ref_39
+      - *ref_40
+      - *ref_41
+      - *ref_42
+      - *ref_43
+      - *ref_44
+      - *ref_45
+      - *ref_46
+      - *ref_47
+      - *ref_48
+      - *ref_49
+

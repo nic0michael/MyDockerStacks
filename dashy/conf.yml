@@ -1,0 +1,176 @@
+---
+# Page meta info, like heading, footer text and nav links
+pageInfo:
+  title: Dashy Dashboard V2.0
+  description: Proxmox Companion Dashboard
+  logo: https://i.ibb.co/71WyyzM/little-bot-3.png
+
+# Optional app settings and configuration
+appConfig:
+  statusCheck: false
+  theme: charry-blossom
+  fontAwesomeKey: c94dc2b452
+  customCss: '.clock p.time { font-size: 3rem !important; }'
+  layout: vertical
+  iconSize: small
+
+# Main content - An array of sections, each containing an array of items
+sections:
+- name: Today
+  icon: far fa-smile-beam
+  displayData:
+    collapsed: false
+    hideForGuests: false
+  widgets:
+  - type: clock
+    options:
+      use12Hour: false
+      timeZone: Africa/Johannesburg
+      format: en-ZA
+  - type: weather
+    options:
+      apiKey: efdbade728b37086877a5e83442004db
+      city: Johannesburg
+  - type: crypto-watch-list
+    options:
+      currency: ZAR
+      sortBy: marketCap
+      assets:
+      - bitcoin
+      - ethereum
+      - monero
+      - solana
+      - polkadot
+
+- name: Support
+  icon: far fa-briefcase
+  items:
+  - title: Proxmox
+    icon: favicon
+    url: https://upupa.loseyourip.com:8006/
+  - title: Portainer
+    icon: favicon
+    url: http://10.154.2.87:9000/#!/home
+  - title: Ansible Semaphore
+    icon: favicon
+    url: http://leopard.loseyourip.com:3000/auth/login
+  - title: Jenkins
+    icon: favicon
+    url: http://lion.loseyourip.com:8080/login?from=%2F
+  - title: Netlify
+    icon: favicon
+    url: https://app.netlify.com/
+  - title: CodeSandbox
+    icon: favicon
+    url: https://codesandbox.io/dashboard
+  - title: Hack the Box
+    icon: favicon
+    url: https://www.hackthebox.com/home
+  - title: DynuDNS
+    icon: favicon
+    url: https://www.dynu.com/en-US/
+
+
+
+- name: Development
+  icon: far fa-thumbs-up
+  items:
+  - title: GitHub
+    icon: favicon
+    url: https://github.com/
+  - title: StackOverflow
+    icon: favicon
+    url: http://stackoverflow.com/
+  - title: CloudFlare
+    icon: favicon
+    url: https://dash.cloudflare.com/
+  - title: DigitalOcean
+    icon: favicon
+    url: https://cloud.digitalocean.com/
+  - title: Netlify
+    icon: favicon
+    url: https://app.netlify.com/
+  - title: CodeSandbox
+    icon: favicon
+    url: https://codesandbox.io/dashboard
+  - title: Hack the Box
+    icon: favicon
+    url: https://www.hackthebox.com/home
+
+- name: Personal
+  icon: far fa-code
+  items:
+  - title: YahooMail
+    icon: favicon
+    url: https://mail.yahoo.com/?.intl=us&.partner=ftr&.lang=en-us
+    description: Primary email account
+    tags: [hosted, personal, email, mail]
+    hotkey: 1
+  - title: Bitwarden
+    icon: favicon
+    url: https://vault.bitwarden.com/#/login
+    tags: [hosted, personal, passwords ]
+    hotkey: 2
+  - title: Banggood
+    icon: favicon
+    url: https://www.banggood.com/index.php
+    hotkey: 3
+  - title: eBay
+    icon: favicon
+    url: https://www.ebay.com/
+    hotkey: 4
+  - title: Wish
+    icon: favicon
+    url: https://www.wish.com/
+    hotkey: 5
+  - title: Temu
+    icon: favicon
+    url: https://www.temu.com/za-en
+    tags: [hosted, personal, notes ]
+    hotkey: 6
+  - title: Takealot
+    icon: favicon
+    url: https://www.takealot.com/
+    hotkey: 7
+  - title: BotShop
+    icon: favicon
+    url: https://botshop.co.za/
+    hotkey: 8
+  - title: MicroRobotics
+    icon: favicon
+    url: https://www.robotics.org.za/
+    hotkey: 9
+
+
+- name: Social
+  icon: far fa-thumbs-up
+  items:
+  - title: Discord
+    icon: si-discord
+    url: https://discord.com/channels/
+  - title: Mastodon
+    icon: si-mastodon
+    url: https://mastodon.social/
+  - title: Reddit
+    icon: si-reddit
+    url: https://www.reddit.com/
+  - title: HackerNews
+    icon: si-ycombinator
+    url: https://news.ycombinator.com/
+  - title: Twitter
+    icon: si-twitter
+    url: https://twitter.com/
+  - title: YouTube
+    icon: si-youtube
+    url: https://youtube.com/
+  - title: Instagram
+    icon: si-instagram
+    url: https://www.instagram.com/
+  - title: News
+    icon: si-bbc
+    url: https://bbc.co.uk/news
+  - title: Crypto Prices
+    icon: fab fa-bitcoin
+    url: https://www.livecoinwatch.com/
+    description: Real-time crypto prices and read-only portfolio
+    provider: Live Coin Watch
