@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  picoshare:
+    environment:
+      - PORT=4001
+      - PS_SHARED_SECRET=${PASSWORD}
+    ports:
+      - 4001:4001/tcp
+    volumes:
+      - .data:/data
+    container_name: Picoshare
+    image: mtlynch/picoshare:latest
+networks: {}
