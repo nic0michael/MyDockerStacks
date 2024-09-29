@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+    volumes:
+      - ./config:/config  # Using relative path for config
+      - ./cache:/cache     # Using relative path for cache
+      - ./media:/media     # Using relative path for media
+    ports:
+      - "8096:8096"
+      - "8920:8920"
+    network_mode: host
