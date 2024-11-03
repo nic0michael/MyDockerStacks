@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth",
+  "data": {
+    "users": [
+      {
+        "id": "bcfd530c2e9b45d99020836aa0fca435",
+        "group_ids": [
+          "system-read-only"
+        ],
+        "is_owner": false,
+        "is_active": true,
+        "name": "Home Assistant Content",
+        "system_generated": true,
+        "local_only": false
+      },
+      {
+        "id": "464e6775839941c1af9e9a62e541ab0f",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": true,
+        "is_active": true,
+        "name": "Nico",
+        "system_generated": false,
+        "local_only": false
+      }
+    ],
+    "groups": [
+      {
+        "id": "system-admin",
+        "name": "Administrators"
+      },
+      {
+        "id": "system-users",
+        "name": "Users"
+      },
+      {
+        "id": "system-read-only",
+        "name": "Read Only"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "1c4e3ec5622140f584baa634df75848c",
+        "user_id": "464e6775839941c1af9e9a62e541ab0f",
+        "auth_provider_type": "homeassistant",
+        "auth_provider_id": null,
+        "data": {
+          "username": "admin"
+        }
+      }
+    ],
+    "refresh_tokens": [
+      {
+        "id": "3372f6b401b440828c3d602e42088de5",
+        "user_id": "bcfd530c2e9b45d99020836aa0fca435",
+        "client_id": null,
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "system",
+        "created_at": "2024-10-05T10:48:54.225271+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "a64ec8bd3d471c97d92d1a15c67b7cee9783cfa58d8b89a0a6974adf74373e3ea33645f0a8ec0ca95ab3b7e691417d452c0d98dc7fe546f108d6639805caf928",
+        "jwt_key": "a8a6829d635ddbe173ceb1a081bea8c7c1d2552f08395fa0602d1e6083d6fe0e4a1583621a70eedc09c864f40a78b5660ef11ed84521b4fbfedb53ff8e94ecea",
+        "last_used_at": null,
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.10.1"
+      },
+      {
+        "id": "e15b20f1ee864272af1514abb79a983c",
+        "user_id": "464e6775839941c1af9e9a62e541ab0f",
+        "client_id": "http://tiger.loseyourip.com:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-10-05T10:52:27.184072+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "43a68c05172d5f1e73d90c4dd38061975e27ff6b02b83b9adad5f49b00508b2ac3347ecb63c7be466db71f641448b0d584c6614307d2c48eedc32790891973d7",
+        "jwt_key": "fca8f3adfb44a3bdf9d00fb9ebade08a47a48a7d0a6f2fd0e2f4348f31c72f70bedde7892b3d237b0847cdc9d0b8af9e26aa33779ba0b2d47d59e7dfd8aa71f9",
+        "last_used_at": "2024-10-05T10:52:27.184111+00:00",
+        "last_used_ip": "10.154.2.112",
+        "expire_at": 1735901547.184111,
+        "credential_id": "1c4e3ec5622140f584baa634df75848c",
+        "version": "2024.10.1"
+      }
+    ]
+  }
+}

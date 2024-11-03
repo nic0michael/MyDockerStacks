@@ -1,0 +1,24 @@
+{ "translations": {
+    "Personal" : "ส่วนตัว",
+    "System" : "ระบบ",
+    "Visible" : "มองเห็นได้",
+    "Open" : "เปิด",
+    "Password protected" : "ใส่รหัสผ่านไว้",
+    "Hidden" : "ซ่อนอยู่",
+    "Local" : "ต้นทาง",
+    "Root" : "รูท",
+    "Federated" : "ที่ติดต่อกับภายนอก",
+    "Email address" : "ที่อยู่อีเมล",
+    "Admin" : "ผู้ดูแล",
+    "Owner" : "เจ้าของ",
+    "Open »%s«" : "เปิด »%s«",
+    "Accept" : "ยอมรับ",
+    "%s" : "%s",
+    "No files in here" : "ไม่มีไฟล์ที่นี่",
+    "No entries found in this folder" : "ไม่พบรายการในโฟลเดอร์นี้",
+    "Name" : "ชื่อ",
+    "Size" : "ขนาด",
+    "Modified" : "แก้ไขเมื่อ",
+    "now" : "ตอนนี้"
+},"pluralForm" :"nplurals=1; plural=0;"
+}

@@ -1,0 +1,61 @@
+<?php
+
+declare(strict_types=1);
+
+
+/**
+ * SPDX-FileCopyrightText: 2021 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
+
+namespace OCA\Circles\Events;
+
+use OCA\Circles\Model\Federated\FederatedEvent;
+
+/**
+ * Class CircleMemberRequestedEvent
+ *
+ * This Event is called when it has been confirmed that a Member's request/invitation is done on all instances
+ * used by the Circle.
+ * Meaning that the event won't be triggered until each instances have been once available during the
+ * retry-on-fail initiated in a background job
+ *
+ * WARNING: Unlike RequestingCircleMemberEvent, this Event is only called on the master instance of the Circle.
+ *
+ * @package OCA\Circles\Events
+ */
+class CircleMemberRequestedEvent extends CircleResultGenericEvent {
+	/** @var int */
+	private $type = 0;
+
+
+	/**
+	 * CircleMemberRequestedEvent constructor.
+	 *
+	 * @param FederatedEvent $federatedEvent
+	 * @param array $results
+	 */
+	public function __construct(FederatedEvent $federatedEvent, array $results) {
+		parent::__construct($federatedEvent, $results);
+	}
+
+
+	/**
+	 * @param int $type
+	 *
+	 * @return $this
+	 */
+	public function setType(int $type): self {
+		$this->type = $type;
+
+		return $this;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getType(): int {
+		return $this->type;
+	}
+}

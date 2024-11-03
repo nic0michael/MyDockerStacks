@@ -1,0 +1,8 @@
+{ "translations": {
+    "Mail" : "Mail",
+    "Notifications" : "Notifications",
+    "Send email" : "Send email",
+    "Today" : "Today",
+    "Home" : "Home"
+},"pluralForm" :"nplurals=1; plural=0;"
+}

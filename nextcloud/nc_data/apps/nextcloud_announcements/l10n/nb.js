@@ -1,0 +1,11 @@
+OC.L10N.register(
+    "nextcloud_announcements",
+    {
+    "Nextcloud announcements" : "Nextcloud-kunngjøringer",
+    "Nextcloud announcement" : "Nextcloud-kunngjøring",
+    "Read more" : "Les mer",
+    "Disable announcements" : "Deaktiver kunngjøringer",
+    "(These announcements are only shown to administrators)" : "(Disse kunngjøringene vises kun for administratorer)",
+    "Nextcloud announcements brings the latest news of Nextcloud into your notifications" : "Nextcloud kunngjøringer gir deg siste nytt om Nextcloud som varsler"
+},
+"nplurals=2; plural=(n != 1);");

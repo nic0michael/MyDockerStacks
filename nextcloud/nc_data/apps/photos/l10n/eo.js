@@ -1,0 +1,28 @@
+OC.L10N.register(
+    "photos",
+    {
+    "Public link" : "Publika ligilo",
+    "Photos" : "Fotoj",
+    "Videos" : "Videaĵoj",
+    "People" : "Homoj",
+    "Folders" : "Dosierujoj",
+    "Favorites" : "Pliŝataĵoj",
+    "Shared with you" : "Kunhavata kun vi",
+    "Tags" : "Etikedoj",
+    "Back" : "Antaŭen",
+    "Save" : "Konservi",
+    "Shared by" : "Kunhavigita de",
+    "No recommendations. Start typing." : "Neniu propono. Ektajpu.",
+    "Group" : "Grupo",
+    "An error occurred" : "Eraro okazis",
+    "Favorite" : "Pliŝatati",
+    "Go back" : "Reveni",
+    "Add folder" : "Aldoni dosierujon",
+    "Home" : "Hejmo",
+    "View" : "Vidi",
+    "Remove from favorites" : "Forigi el pliŝataĵoj",
+    "Add" : "Aldoni",
+    "Delete selection" : "Forigi elekton",
+    "Details" : "Detaloj"
+},
+"nplurals=2; plural=(n != 1);");

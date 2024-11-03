@@ -1,0 +1,14 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    labels:
+      - com.centurylinklabs.watchtower.monitor-only="true"
+    container_name: vaultwarden
+    restart: always
+    environment:
+      SIGNUPS_ALLOWED: "true"
+    ports:
+      - 8073:80
+    volumes:
+      - ./vw-data:/data
+networks: {}

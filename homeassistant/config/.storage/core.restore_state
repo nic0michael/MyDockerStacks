@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-10-05T10:48:58.127642+00:00","last_reported":"2024-10-05T10:48:58.127642+00:00","last_updated":"2024-10-05T10:48:58.127642+00:00","context":{"id":"01J9E4R0GFQ4WKRF2PNYJ0PHA7","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-10-05T10:55:32.306883+00:00"
+    },
+    {
+      "state": {"entity_id":"person.nico","state":"unknown","attributes":{"editable":true,"id":"nico","device_trackers":[],"user_id":"464e6775839941c1af9e9a62e541ab0f","friendly_name":"Nico"},"last_changed":"2024-10-05T10:51:14.045781+00:00","last_reported":"2024-10-05T10:51:14.045997+00:00","last_updated":"2024-10-05T10:51:14.045781+00:00","context":{"id":"01J9E4W57X20DA0PE9VCFJRE14","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-10-05T10:55:32.306883+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-10-05T10:51:45.941270+00:00","last_reported":"2024-10-05T10:51:45.941386+00:00","last_updated":"2024-10-05T10:51:45.941270+00:00","context":{"id":"01J9E4X4CNQJA6M9HRSRHM7S5N","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-10-05T10:55:32.306883+00:00"
+    }
+  ]
+}

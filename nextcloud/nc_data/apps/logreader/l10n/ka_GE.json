@@ -1,0 +1,14 @@
+{ "translations": {
+    "Logging" : "იწერება ლოგი",
+    "Log Reader" : "ლოგის მკითხველი",
+    "Level" : "დონე",
+    "App" : "აპლიკაცია",
+    "Time" : "დრო",
+    "Download logs" : "ლოგების გადმოწერა",
+    "Relative" : "ფარდობითი",
+    "Message" : "წერილი",
+    "Info" : "ინფორმაცია",
+    "Warning" : "გაფრთხილება",
+    "Error" : "შეცდომა"
+},"pluralForm" :"nplurals=2; plural=(n!=1);"
+}

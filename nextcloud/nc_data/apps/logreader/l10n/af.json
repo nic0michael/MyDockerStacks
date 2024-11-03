@@ -1,0 +1,9 @@
+{ "translations": {
+    "App" : "Toep",
+    "Time" : "Tyd",
+    "Relative" : "Relatief",
+    "Info" : "Inligting",
+    "Warning" : "Waarskuwing",
+    "Error" : "Fout"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

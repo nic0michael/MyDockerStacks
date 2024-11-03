@@ -1,0 +1,23 @@
+OC.L10N.register(
+    "firstrunwizard",
+    {
+    "Schedule work & meetings, synced with all your devices." : "Planificatz prètzfaches e reünions, sincronizats amb totes vòstres periferics.",
+    "Keep your colleagues and friends in one place without leaking their private info." : "Gardatz vòstres companhs e amics a un sòl lòc sens divulgar lor vida privada.",
+    "Simple email app nicely integrated with Files, Contacts and Calendar." : "Aplicacion simpla e simpatica de corrièl integrada a Fichièrs, Contactes e Calendièr.",
+    "Smart media tagging for Nextcloud" : "Etiquetatge intelligent dels mèdias per Nextcloud",
+    "Access files via WebDAV" : "Accedissètz a vòstres fichièrs via WebDAV",
+    "Desktop client" : "Client de burèu",
+    "iOS app" : "Aplicacion iOS",
+    "Close" : "Plegar",
+    "Privacy" : "Confidencialitat",
+    "Get the apps to sync your files" : "Obtenètz las aplicacions que vos permeton de sincronizar vòstres fichièrs",
+    "Server address" : "Adreça del servidor",
+    "Read more" : "Ne legir mai",
+    "Copied!" : "Copiat !",
+    "Not supported!" : "Pas pres en carga !",
+    "Press ⌘-C to copy." : "Quichar ⌘-C per copiar.",
+    "Press Ctrl-C to copy." : "Quichar Ctrl-C per copiar.",
+    "About" : "A prepaus",
+    "Copy link" : "Copiar lo ligam"
+},
+"nplurals=2; plural=(n > 1);");

@@ -1,0 +1,9 @@
+{ "translations": {
+    "Time" : "Ora",
+    "Relative" : "Relatiu",
+    "Show details" : "Mostrar detalhs",
+    "Info" : "Info",
+    "Warning" : "Avertiment",
+    "Error" : "Error"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}

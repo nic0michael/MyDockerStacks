@@ -1,0 +1,8 @@
+{ "translations": {
+    "Approve" : "Kinnita",
+    "Cancel" : "Loobu",
+    "Nextcloud Notification" : "Nextcloudi teavitus",
+    "Please wait …" : "Palun oota...",
+    "Your login attempt was rejected." : "Sinu sisse logimise katse lükati tagasi"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

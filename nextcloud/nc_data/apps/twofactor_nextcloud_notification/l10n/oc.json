@@ -1,0 +1,6 @@
+{ "translations": {
+    "Approve" : "Aprovar",
+    "Cancel" : "Anullar",
+    "Two-Factor Authentication via Nextcloud notification" : "Autentificacion dos factors via notificacion Nextcloud"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}

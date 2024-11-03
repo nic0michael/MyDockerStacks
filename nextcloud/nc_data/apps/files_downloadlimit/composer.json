@@ -1,0 +1,34 @@
+{
+	"name": "nextcloud/files_downloadlimit",
+	"require-dev": {
+		"nextcloud/coding-standard": "^1.0.0",
+		"nextcloud/ocp": "dev-master",
+		"vimeo/psalm": "^5.23"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"OCP\\": "vendor/nextcloud/ocp/OCP"
+		}
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"classmap-authoritative": true,
+		"platform": {
+			"php": "8.0.2"
+		},
+		"sort-packages": true
+	},
+	"scripts": {
+		"cs:check": "php-cs-fixer fix --dry-run --diff",
+		"cs:fix": "php-cs-fixer fix",
+		"lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
+		"psalm": "psalm",
+		"psalm:update": "psalm --update-baseline --set-baseline=tests/psalm-baseline.xml"
+	},
+	"authors": [
+		{
+			"name": "John Molakvoæ",
+			"email": "skjnldsv@protonmail.com"
+		}
+	]
+}

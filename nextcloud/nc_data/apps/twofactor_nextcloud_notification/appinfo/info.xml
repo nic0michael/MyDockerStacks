@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+  - SPDX-FileCopyrightText: 2018 Nextcloud GmbH and Nextcloud contributors
+  - SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+<info>
+	<id>twofactor_nextcloud_notification</id>
+	<name>Two-Factor Authentication via Nextcloud notification</name>
+	<summary>Allows using any of your logged in devices as second factor</summary>
+	<description>Allows using any of your logged in devices as second factor</description>
+	<version>4.0.0</version>
+	<licence>agpl</licence>
+
+	<author>Joas Schilling</author>
+	<author>Roeland Jago Douma</author>
+	<author>Christoph Wurst</author>
+
+	<namespace>TwoFactorNextcloudNotification</namespace>
+	<category>security</category>
+
+	<website>https://github.com/nextcloud/twofactor_nextcloud_notification</website>
+	<bugs>https://github.com/nextcloud/twofactor_nextcloud_notification/issues</bugs>
+	<repository type="git">https://github.com/nextcloud/twofactor_nextcloud_notification.git</repository>
+	<screenshot>https://raw.githubusercontent.com/nextcloud/twofactor_nextcloud_notification/main/screenshots/request.png</screenshot>
+	<screenshot>https://raw.githubusercontent.com/nextcloud/twofactor_nextcloud_notification/main/screenshots/notification.png</screenshot>
+
+	<dependencies>
+		<nextcloud min-version="30" max-version="30" />
+	</dependencies>
+
+	<background-jobs>
+		<job>OCA\TwoFactorNextcloudNotification\BackgroundJob\CleanupTokens</job>
+	</background-jobs>
+
+	<two-factor-providers>
+		<provider>OCA\TwoFactorNextcloudNotification\Provider\NotificationProvider</provider>
+	</two-factor-providers>
+</info>

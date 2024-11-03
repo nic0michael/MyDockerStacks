@@ -1,0 +1,8 @@
+{ "translations": {
+    "App" : "Tətbiq",
+    "Time" : "Vaxt",
+    "Info" : "Info",
+    "Warning" : "Xəbərdarlıq",
+    "Error" : "Səhv"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
