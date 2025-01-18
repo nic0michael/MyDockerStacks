@@ -1,8 +1,0 @@
-{ "translations": {
-    "App" : "Applikasjon",
-    "Time" : "Tid",
-    "Info" : "Info",
-    "Warning" : "Åtvaring",
-    "Error" : "Feil"
-},"pluralForm" :"nplurals=2; plural=(n != 1);"
-}

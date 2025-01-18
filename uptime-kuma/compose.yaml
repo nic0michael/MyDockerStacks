@@ -1,8 +1,12 @@
-version: '3'
+version: "3.3"
 services:
-uptime-kuma:
-    image: louislam/uptime-kuma:1
-    container_name: kuma
-    volumes:
-      - /yourdata/folder:/app/data
+  uptime-kuma:
     restart: always
+    ports:
+      - 3001:3001
+    volumes:
+      - ./uptime-kuma-data:/app/data  # Local folder mapped to container volume
+    container_name: uptime-kuma
+    image: louislam/uptime-kuma:1
+volumes: {}
+networks: {}

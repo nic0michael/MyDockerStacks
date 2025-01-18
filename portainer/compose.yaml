@@ -8,8 +8,8 @@ services:
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./portainer_data:/data
-    image: portainer/portainer-ce:latest
+      - portainer_data:/data
+    image: portainer/portainer-ce:2.21.4
 volumes:
   portainer_data: {}
 networks: {}

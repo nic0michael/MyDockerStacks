@@ -1,8 +1,0 @@
-{ "translations": {
-    "Time" : "Ժամ",
-    "Relative" : "Հարաբերական",
-    "Info" : "Info",
-    "Warning" : "Զգուշացում",
-    "Error" : "Սխալ"
-},"pluralForm" :"nplurals=2; plural=(n != 1);"
-}

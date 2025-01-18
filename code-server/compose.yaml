@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  code-server:
+    image: codercom/code-server:latest
+    container_name: code-server
+    ports:
+      - 8181:8080 # Expose the port for access
+    environment:
+      - PUID=${PUID} # User ID from .env file
+      - PGID=${PGID} # Group ID from .env file
+      - TZ=${TZ} # Timezone from .env file
+      - PASSWORD=${PASSWORD} # Password from .env file
+    volumes:
+      - ./data:/home/coder/project # Path to store persistent data
+    restart: unless-stopped
+networks: {}

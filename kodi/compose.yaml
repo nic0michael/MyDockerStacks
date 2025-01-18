@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  kodi-headless:
+    image: linuxserver/kodi-headless
+    container_name: kodi-headless
+    environment:
+      - PGID=1000           # Replace '1000' with your actual group ID
+      - PUID=1000           # Replace '1000' with your actual user ID
+      - TZ=America/New_York # Replace with your timezone, e.g., 'America/New_York'
+    ports:
+      - "8701:8080"         # WebUI port
+      - "9090:9090"         # WebSockets port
+      - "9777:9777/udp"     # ESAll interface port
+    volumes:
+
+      - ./kodidata:/config/.kodi  # Use './kodidata' in the same directory as docker-compose.yml
+    restart: unless-stopped
+

@@ -1,0 +1,18 @@
+services:
+  navidrome:
+    image: deluan/navidrome:latest
+    ports:
+      - "4533:4533"
+    environment:
+      - ND_SCANSCHEDULE
+      - ND_LOGLEVEL
+      - ND_BASEURL
+      - ND_AUTOIMPORTPLAYLISTS
+      - ND_UILOGINBACKGROUNDURL
+      - ND_UIWELCOMEMESSAGE
+      - ND_DEFAULTTHEME
+      - ND_SESSIONTIMEOUT
+    volumes:
+      - "./data:/data"
+      - "./your-music:/music:ro"
+    restart: unless-stopped
