@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  mattermost-preview:
+    image: mattermost/mattermost-preview
+    container_name: mattermost-preview
+    ports:
+      - "8065:8065"
+      - "8443:8443"
+    restart: unless-stopped
