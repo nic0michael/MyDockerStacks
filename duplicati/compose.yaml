@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  duplicati:
+    image: tesujimath/duplicati-with-docker-cli:latest
+    container_name: duplicati
+    restart: always
+    volumes:
+      - ./config:/config
+      - ./backups:/backups
+      - /:/source:ro
+    ports:
+      - 8200:8200
+networks: {}
