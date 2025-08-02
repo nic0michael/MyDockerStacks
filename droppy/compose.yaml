@@ -1,0 +1,11 @@
+version: '3'
+services:
+  droppy:
+    container_name: droppy
+    image: silverwind/droppy
+    ports:
+      - '8989:8989'
+    volumes:
+      - /opt/droppy/config:/config
+      - /opt/droppy/data:/files
+    restart: unless-stopped

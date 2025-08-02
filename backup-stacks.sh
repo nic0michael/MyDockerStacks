@@ -35,7 +35,9 @@ process_primary_folders() {
 if [ -d "$SOURCE_DIR" ]; then
     process_primary_folders "$SOURCE_DIR" "$DEST_DIR"
     echo "Backup completed successfully."
+    echo "now run docker commands in folder: $DEST_DIR"
 else
     echo "Source directory $SOURCE_DIR does not exist. Exiting."
     exit 1
 fi
+

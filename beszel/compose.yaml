@@ -1,0 +1,23 @@
+services:
+  beszel:
+    image: henrygd/beszel:latest
+    container_name: beszel
+    restart: unless-stopped
+    ports:
+      - 8090:8090
+    volumes:
+      - ./beszel_data:/beszel_data
+      - ./beszel_socket:/beszel_socket
+  beszel-agent:
+    image: henrygd/beszel-agent:latest
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./beszel_socket:/beszel_socket
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      LISTEN: /beszel_socket/beszel.sock
+      # Do not remove quotes around the key
+      KEY: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBAoRgAGQyOSs2acmTi/jpSY+/bwzqd/TqaJMwdq/TGj'
+networks: {}

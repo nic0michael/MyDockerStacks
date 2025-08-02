@@ -1,0 +1,41 @@
+services:
+  db:
+    image: mariadb:10.11
+    container_name: seafile-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_LOG_CONSOLE=true
+      - MARIADB_AUTO_UPGRADE=1
+    volumes:
+      - /opt/seafile-mysql/db:/var/lib/mysql
+    networks:
+      - seafile-net
+  memcached:
+    image: memcached:1.6.18
+    container_name: seafile-memcached
+    entrypoint: memcached -m 256
+    networks:
+      - seafile-net
+  seafile:
+    image: seafileltd/seafile-mc:11.0-latest
+    container_name: seafile
+    ports:
+      - 9037:80 # Changed from 80:80 to 9037:80
+    #     - "443:443"
+    volumes:
+      - /opt/seafile-data:/shared
+    environment:
+      - DB_HOST=db
+      - DB_ROOT_PASSWD=${MYSQL_ROOT_PASSWORD}
+      - TIME_ZONE=Etc/UTC
+      - SEAFILE_ADMIN_EMAIL=${SEAFILE_ADMIN_EMAIL}
+      - SEAFILE_ADMIN_PASSWORD=${SEAFILE_ADMIN_PASSWORD}
+      - SEAFILE_SERVER_LETSENCRYPT=false
+      - SEAFILE_SERVER_HOSTNAME=${SEAFILE_SERVER_HOSTNAME}      
+    depends_on:
+      - db
+      - memcached
+    networks:
+      - seafile-net
+networks:
+  seafile-net: null
