@@ -1,0 +1,56 @@
+version: "3"
+services:
+  docmost:
+    image: docmost/docmost:latest
+    container_name: docmost
+    hostname: docmost
+    user: root
+    healthcheck:
+      test: timeout 10s bash -c ':> /dev/tcp/127.0.0.1/3000' || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 90s
+    depends_on:
+      - docmost-db
+      - docmost-redis
+    environment:
+      APP_URL: ${APP_URL}
+      APP_SECRET: ${APP_SECRET}
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@docmost-db:5432/${POSTGRES_DB}?schema=public
+      REDIS_URL: redis://docmost-redis:6379
+    ports:
+      - 5031:3000
+    restart: unless-stopped
+    volumes:
+      - ./docmost:/app/data/storage
+  docmost-db:
+    image: postgres:16-alpine
+    container_name: docmost-DB
+    hostname: docmost-db
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ./docmost-db:/var/lib/postgresql/data:rw
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    restart: on-failure:5
+  docmost-redis:
+    image: redis:7.2-alpine
+    container_name: docmost-redis
+    hostname: docmost-redis
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - redis-cli ping || exit 1
+    volumes:
+      - ./redis_data:/data
+networks: {}
