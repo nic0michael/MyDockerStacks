@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  obsidian:
+    image: ghcr.io/linuxserver/obsidian:latest
+    container_name: obsidian
+    security_opt:
+      - no-new-privileges:false
+      - seccomp:unconfined
+    healthcheck:
+      test: timeout 10s bash -c ':> /dev/tcp/127.0.0.1/3000' || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 90s
+    ports:
+      - "${OBS_PORT}:3000"
+    shm_size: "${OBS_SHM}"
+    volumes:
+      - ./config:/config:rw
+    environment:
+      CUSTOM_USER: ${OBS_USER}
+      PASSWORD: ${OBS_PASSWORD}
+      PUID: ${PUID}
+      PGID: ${PGID}
+      TZ: ${TZ}
+    restart: unless-stopped
