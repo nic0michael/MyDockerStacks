@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  mealie:
+    image: ghcr.io/mealie-recipes/mealie:${MEALIE_VERSION}
+    container_name: ${MEALIE_CONTAINER_NAME}
+    restart: always
+    ports:
+      - "9925:9000"
+    deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT}
+    volumes:
+      - mealie-data:/app/data/
+    environment:
+      - ALLOW_SIGNUP=${ALLOW_SIGNUP}
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - MAX_WORKERS=${MAX_WORKERS}
+      - WEB_CONCURRENCY=${WEB_CONCURRENCY}
+      - BASE_URL=${BASE_URL}
+
+volumes:
+  mealie-data:
