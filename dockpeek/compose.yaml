@@ -1,0 +1,13 @@
+services:
+  dockpeek:
+    image: ghcr.io/dockpeek/dockpeek:latest
+    container_name: dockpeek
+    environment:
+      - SECRET_KEY=${SECRET_KEY}   # Required: Set in .env
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+    ports:
+      - "${HOST_PORT}:8000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
