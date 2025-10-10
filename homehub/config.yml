@@ -1,0 +1,10 @@
+instance_name: "My HomeHub"
+admin_name: "Administrator"
+password: ""   # leave blank for passwordless
+feature_toggles:
+  shopping_list: true
+  pdf_compressor: true
+  media_downloader: true
+family_members:
+  - Alice
+  - Bob
