@@ -8,6 +8,8 @@ https://docs.requarks.io/install
 
 https://docs.requarks.io/install/docker
 
+https://github.com/Requarks/wiki
+
 ## Installation Instructions
 Run these commands:
 ```bash
