@@ -5,6 +5,8 @@ feature_toggles:
   shopping_list: true
   pdf_compressor: true
   media_downloader: true
+  recipes: true
 family_members:
-  - Alice
-  - Bob
+  - Mom
+  - Dad
+  - Dracula
