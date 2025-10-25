@@ -174,3 +174,23 @@ When Pulse starts for the first time, it will:
 **[http://your-server-ip-address:7655/](http://tiger.loseyourip.com:7655/)
 
 **[http://tiger.loseyourip.com:7655/](http://tiger.loseyourip.com:7655/)
+
+
+## Create User and Token
+
+
+1. **Log in** to your Proxmox web interface (usually at `https://<your-proxmox-ip>:8006`).
+2. Go to
+   **Datacenter → Permissions → Users**
+3. Click **Add** → enter: `root@pam!pulse` click **Add**
+
+4. Go to
+   **Datacenter  ^f^r Permissions  ^f^r API Tokens**
+5. Click **Add**  ^f^r choose:
+   * **User:** select an existing Proxmox user `root@pam!pulse`
+   * **Token ID:** e.g. `pulse`
+   * (Optional) enable **Privilege Separation** (recommended)
+5. Click **Add**.
+
+✅ **Copy the full token immediately** — it will only be shown once.
+`289ca812-5b44-4382-a568-2929f8c33159`
