@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  linkding:
+    image: sissbruecker/linkding:latest
+    container_name: linkding
+    ports:
+      - "9090:9090"
+    volumes:
+      - "/opt/linkding/data:/etc/linkding/data"
+    restart: unless-stopped
+
