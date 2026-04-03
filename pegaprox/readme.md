@@ -5,6 +5,6 @@ DEFAULT LOGIN CREDENTIALS:
 ================================================== \
 URL: \
 https://localhost:5000/ \
-https://localhost:5000/
+https://<SERVER_IP_ADDRESS>:5000/
 
 
