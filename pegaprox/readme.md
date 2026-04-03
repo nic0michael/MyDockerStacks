@@ -1,5 +1,5 @@
 DEFAULT LOGIN CREDENTIALS:
-  Username:  \
+  Username:  pegaprox \
   Password: admin \
   Please change the password after first login! \
 ================================================== \
