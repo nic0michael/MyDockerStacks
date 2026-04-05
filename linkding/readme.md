@@ -1,6 +1,6 @@
 # Create root user and password
 
-After starting this container run this command:
+**After starting this container run this command:**
 ```sh
 docker exec -it linkding python3 manage.py createsuperuser
 
