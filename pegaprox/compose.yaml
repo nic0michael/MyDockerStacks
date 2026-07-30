@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  pegaprox:
+    image: ghcr.io/pegaprox/pegaprox:latest
+    container_name: pegaprox
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+      - "5002:5002"
+    volumes:
+      - ./pegaprox-config:/app/config
+      - ./pegaprox-logs:/app/logs
+    restart: unless-stopped
+    user: root
