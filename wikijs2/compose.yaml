@@ -24,7 +24,7 @@ services:
       DB_NAME: ${POSTGRES_DB}
     restart: unless-stopped
     ports:
-      - 9881:3000
+      - 9880:3000
 volumes:
-  db-data2: null
+  db-data: null
 networks: {}

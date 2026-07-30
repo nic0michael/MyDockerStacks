@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  bookstack:
+    image: lscr.io/linuxserver/bookstack:version-v25.02
+    container_name: bookstack
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ}
+      - APP_URL=${APP_URL}
+      - APP_KEY=${APP_KEY}
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_DATABASE=${POSTGRES_DB}
+      - DB_USERNAME=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - ./folders/bookstack:/config
+    ports:
+      - 6875:80
+    restart: unless-stopped
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - TZ=${TZ}
+    volumes:
+      - ./folders/postgres:/var/lib/postgresql/data
+    restart: unless-stopped
+  bookstack-postgresql:
+    restart: unless-stopped
+networks: {}

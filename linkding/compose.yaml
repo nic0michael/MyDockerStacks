@@ -9,4 +9,7 @@ services:
     env_file:
       - .env
     restart: unless-stopped
+<<<<<<< HEAD
 
+=======
+>>>>>>> 745a95035642800ab388fe81cd56e5f46ef96087

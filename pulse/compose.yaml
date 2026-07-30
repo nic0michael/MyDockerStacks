@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  pulse:
+    image: rcourtman/pulse:latest
+    container_name: pulse
+    restart: unless-stopped
+    ports:
+      - "${PULSE_PORT}:7655"
+    environment:
+      PULSE_AUTH_USER: ${PULSE_AUTH_USER}
+      PULSE_AUTH_PASS: ${PULSE_AUTH_PASS}
+      API_TOKEN: ${PULSE_API_TOKEN}
+      DISCOVERY_SUBNET: ${PULSE_DISCOVERY_SUBNET}
+    volumes:
+      - ${PULSE_DATA_PATH}:/data
